@@ -16,7 +16,7 @@ async function loadMovies() {
   errorMessage.value = null
   try {
     await new Promise((resolve) => setTimeout(resolve, 2000))
-    const response = await fetch('/data/movies.json')
+    const response = await fetch('./data/movies.json')
     if (!response.ok) {
       throw new Error('Impossible de charger les films (statut ' + response.status + ')')
     }
