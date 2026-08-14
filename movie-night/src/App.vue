@@ -93,6 +93,7 @@ onMounted(() => {
       v-if="selectedMovie"
       :movie="selectedMovie"
       @close="closeDetails"
+      @toggle-favorite="toggleFavorite"
     />
   </div>
 </template>
